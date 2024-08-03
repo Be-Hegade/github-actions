@@ -1,0 +1,10 @@
+name: Initial Workflow
+on: workflow_dispatch
+jobs:
+  basic_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: create a file
+        run: touch abi.txt
+      - name: add content to file
+        run: echo "abhishek" >> abi.txt
