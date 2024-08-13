@@ -10,3 +10,9 @@ jobs:
         run: echo "abhishek" >> abi.txt
       - name: show the file
         run: cat abi.txt
+  second_job:
+    needs: basic_job
+    runs-on: ubuntu-latest
+    steps:
+      - name: update a file
+        run: echo "hegade" >> abi.txt
